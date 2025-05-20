@@ -43,7 +43,7 @@ echo "LUKS encrypted volume successfully mounted on $MNT_POINT"
 # --- Mount the integrity protected volume (no dm-verity yet)
 echo "Mounting measured volume to: $MNT_POINT2"
 mkdir -p "$MNT_POINT2"  # Create the mount point directory
-mount /dev/mapper/vdd "$MNT_POINT2"  # Mount theintegrity protected volume
+mount /dev/vdd "$MNT_POINT2"  # Mount theintegrity protected volume
 chmod 777 $MNT_POINT2
 echo "measured  encrypted volume successfully mounted on $MNT_POINT2"
 

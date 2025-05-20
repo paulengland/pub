@@ -11,6 +11,7 @@ MNT_ROOT="/datica"
 MNT_POINT="$MNT_ROOT/enc1"      # Mount point for the encrypted volume
 MNT_POINT2="$MNT_ROOT/int2"      # Mount point for the encrypted volume
 VOLUME_NAME="datica"     # Name of the LUKS volume
+mkdir "$MNT_ROOT"
 
 # --- Create Keyfile ---
 echo "Creating keyfile: $KEYFILE"
